@@ -34,14 +34,10 @@ const TaskForm = () => {
 
     return ( 
         <> 
-            <input 
-                type="text" 
-                placeholder="Add a new task..."
-                value={input}
-                onChange={changeValue}
-                onKeyDown={handleKeyPress}
-            />
-            <button onClick={addTask}> Add Task </button>
+            <div class="input-group"> 
+                <input type="text" placeholder="Add a new task..." value={input} onChange={changeValue} onKeyDown={handleKeyPress} class="form-control"/>
+                <button onClick={addTask} class="btn btn-primary"> Add Task </button>
+            </div>
         </>
     )
 }
